@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="452.0" fitWidth="393.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/index_woman.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="442.0" fitWidth="393.0" layoutX="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/index_man.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="183.0" layoutY="166.0" text="Label" />
+   </children>
+</AnchorPane>

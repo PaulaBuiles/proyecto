@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="606.0" prefWidth="794.0">
+         <children>
+            <Label layoutX="18.0" layoutY="43.0" text="TODOS LOS PRODUCTOS DISPONIBLES:">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="564.0" text="Pag 2.">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="23.0" />
+               </font>
+            </Label>
+            <VBox cache="true" layoutX="569.0" layoutY="338.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <VBox cache="true" layoutX="294.0" layoutY="338.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <VBox cache="true" layoutX="569.0" layoutY="99.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <VBox cache="true" layoutX="18.0" layoutY="338.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <VBox cache="true" layoutX="18.0" layoutY="99.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <VBox cache="true" layoutX="295.0" layoutY="99.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="100.0" top="5.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </VBox>
+            <Button id="buttonsChange" layoutX="659.0" layoutY="22.0" mnemonicParsing="false" onAction="#acercaDeView" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #FADBD8;" text="volver a inicio">
+               <font>
+                  <Font name="Bodoni MT" size="14.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView glyphName="HOME" layoutX="635.0" layoutY="48.0" size="15.0" />
+            <Button id="buttonsChange" layoutX="652.0" layoutY="558.0" mnemonicParsing="false" onAction="#acercaDeView" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #FADBD8;" text="Pag anterior">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="619.0" layoutY="584.0" size="18.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
