@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cue.clothingshopfinal.controller.ClothingController">
    <children>
-      <BorderPane prefHeight="606.0" prefWidth="794.0">
+      <BorderPane layoutX="-1.0" prefHeight="701.0" prefWidth="877.0">
          <top>
-            <AnchorPane prefHeight="126.0" prefWidth="794.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="126.0" prefWidth="785.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="19.0" prefHeight="43.0" prefWidth="220.0" text="Fashion Store" textAlignment="CENTER">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="329.0" layoutY="19.0" prefHeight="43.0" prefWidth="220.0" text="Fashion Store" textAlignment="CENTER">
                      <font>
                         <Font name="Bodoni MT Italic" size="34.0" />
                      </font>
                   </Label>
-                  <Button id="buttonsChange" layoutX="199.0" layoutY="81.0" mnemonicParsing="false" onAction="#inicioView" style="-fx-background-color: #FADBD8;" text="Inicio">
+                  <Button id="buttonsChange" layoutX="302.0" layoutY="81.0" mnemonicParsing="false" onAction="#beginningView" style="-fx-background-color: #FADBD8;" text="Inicio">
                      <font>
                         <Font name="Bodoni MT" size="14.0" />
                      </font>
                   </Button>
-                  <Button id="buttonsChange" layoutX="287.0" layoutY="81.0" mnemonicParsing="false" onAction="#acercaDeView" style="-fx-background-color: #FADBD8;" text="Acerca De">
-                     <font>
-                        <Font name="Bodoni MT" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button id="buttonsChange" layoutX="397.0" layoutY="81.0" mnemonicParsing="false" onAction="#productosView" style="-fx-background-color: #FADBD8;" text="Productos">
-                     <font>
-                        <Font name="Bodoni MT" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button id="buttonsChange" layoutX="507.0" layoutY="81.0" mnemonicParsing="false" onAction="#contactoView" style="-fx-background-color: #FADBD8;" text="Contacto">
+                  <Button id="buttonsChange" layoutX="412.0" layoutY="81.0" mnemonicParsing="false" style="-fx-background-color: #FADBD8;" text="Mujer">
                      <font>
                         <Font name="Bodoni MT" size="14.0" />
                      </font>
@@ -52,10 +42,32 @@
                         <Font name="Bodoni MT" size="15.0" />
                      </font>
                   </Label>
-                  <TextField id="buscar" fx:id="buscar" layoutX="649.0" layoutY="46.0" prefHeight="26.0" prefWidth="122.0" promptText="Buscar productos" style="-fx-border-color: #FADBD8;" />
-                  <FontAwesomeIconView glyphName="USER" layoutX="759.0" layoutY="32.0" size="18" wrappingWidth="11.771501541137695" />
-                  <FontAwesomeIconView glyphName="PHONE" layoutX="21.0" layoutY="78.0" size="15.0" />
-                  <FontAwesomeIconView glyphName="SEARCH" layoutX="625.0" layoutY="64.0" size="15.0" />
+                  <TextField id="buscar" fx:id="buscar" layoutX="728.0" layoutY="48.0" prefHeight="26.0" prefWidth="122.0" promptText="Buscar productos" style="-fx-border-color: #FADBD8;" />
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="687.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/istockphoto-1136192849-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="821.0" layoutY="14.0" onMouseClicked="#loginView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="7.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/56418004-icono-de-teléfono-blanco-y-negro-vector-del-teléfono-símbolo-aislado-en-el-fondo-blanco-pictograma-t.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="47.0" layoutX="767.0" layoutY="11.0" onMouseClicked="#sellView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button id="buttonsChange" layoutX="518.0" layoutY="81.0" mnemonicParsing="false" onAction="#productsMenView" style="-fx-background-color: #FADBD8;" text="Hombre">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </top>
@@ -67,10 +79,13 @@
                         <Font name="Bodoni MT Condensed" size="23.0" />
                      </font>
                   </Label>
-                  <VBox cache="true" layoutX="28.0" layoutY="48.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+                  <VBox cache="true" layoutX="43.0" layoutY="48.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
                      <children>
-                        <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                        <ImageView fitHeight="167.0" fitWidth="202.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@images/-stfco-producto-Enterizos-conjuntos-NARANJA-S123398-1.jpg" />
+                           </image></ImageView>
+                        <Label fx:id="name1" alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -78,7 +93,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price1" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -86,17 +101,23 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                        <ImageView fx:id="product1" fitHeight="32.0" fitWidth="33.0" onMouseClicked="#addCart" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
                            <VBox.margin>
-                              <Insets bottom="5.0" left="100.0" top="5.0" />
+                              <Insets left="85.0" />
                            </VBox.margin>
-                        </FontAwesomeIconView>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <VBox cache="true" layoutX="288.0" layoutY="48.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+                  <VBox cache="true" layoutX="337.0" layoutY="48.0" prefHeight="247.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
                      <children>
-                        <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                        <ImageView fitHeight="167.0" fitWidth="200.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@images/248162c1a67520ed896d0bc12ac123d2-5828810800_1_1_0.jpg" />
+                           </image></ImageView>
+                        <Label fx:id="name2" alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="202.0" text="Vestido Negro" textAlignment="CENTER">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -104,7 +125,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price2" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$180.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -112,17 +133,23 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                        <ImageView fx:id="product2" fitHeight="31.0" fitWidth="35.0" onMouseClicked="#addCart" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
                            <VBox.margin>
-                              <Insets bottom="5.0" left="100.0" top="5.0" />
+                              <Insets left="85.0" />
                            </VBox.margin>
-                        </FontAwesomeIconView>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <VBox cache="true" layoutX="551.0" layoutY="48.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+                  <VBox cache="true" layoutX="628.0" layoutY="41.0" prefHeight="260.0" prefWidth="194.0" style="-fx-border-color: #FADBD8;">
                      <children>
-                        <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                        <ImageView fitHeight="172.0" fitWidth="199.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/-stfco-producto-Camisasyblusas-AZULKLEIN-S173294A-2.jpg" />
+                           </image></ImageView>
+                        <Label fx:id="name3" alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="202.0" text="Blusa con amarre" textAlignment="CENTER">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -130,7 +157,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price3" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$60.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -138,17 +165,55 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                        <ImageView fx:id="product3" fitHeight="66.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
-                              <Insets bottom="5.0" left="100.0" top="5.0" />
+                              <Insets left="85.0" />
                            </VBox.margin>
-                        </FontAwesomeIconView>
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <VBox cache="true" layoutX="28.0" layoutY="266.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+                  <VBox cache="true" layoutX="42.0" layoutY="320.0" prefHeight="246.0" prefWidth="205.0" style="-fx-border-color: #FADBD8;">
                      <children>
-                        <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                        <ImageView fitHeight="150.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/-stfco-producto-Camisasyblusas-ROJOPRADA-S172537A-2.jpg" />
+                           </image></ImageView>
+                        <Label fx:id="name4" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="209.0" text="Top con cierre en espalda" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Bodoni MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="price4" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$80.000">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Bodoni MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="product4" fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="85.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox cache="true" layoutX="336.0" layoutY="318.0" prefHeight="250.0" prefWidth="205.0" style="-fx-border-color: #FADBD8;">
+                     <children>
+                        <ImageView fitHeight="155.0" fitWidth="205.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/-stfco-producto-Chaquetas-NEGRO-S076020-2.jpg" />
+                           </image></ImageView>
+                        <Label fx:id="name5" alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Chaqueta tipo cuero" textAlignment="CENTER">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -156,7 +221,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price5" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$160.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -164,17 +229,24 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                        <ImageView fx:id="product5" fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
                            <VBox.margin>
-                              <Insets bottom="5.0" left="100.0" top="5.0" />
+                              <Insets left="85.0" />
                            </VBox.margin>
-                        </FontAwesomeIconView>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <VBox cache="true" layoutX="288.0" layoutY="266.0" prefHeight="199.0" prefWidth="202.0" style="-fx-border-color: #FADBD8;">
+                  <VBox cache="true" layoutX="625.0" layoutY="312.0" prefHeight="221.0" prefWidth="182.0" style="-fx-border-color: #FADBD8;">
                      <children>
-                        <ImageView fitHeight="86.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Enterizo con escote" textAlignment="CENTER">
+                        <ImageView fitHeight="172.0" fitWidth="204.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/-stfco-producto-Palazzo-MOSTAZA-S028332B-1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="name6" alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="202.0" text="Pantalon Mostaza" textAlignment="CENTER">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -182,7 +254,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price6" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$160.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -190,19 +262,16 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <FontAwesomeIconView glyphName="SHOPPING_CART" size="20">
+                        <ImageView fx:id="product6" fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                           </image>
                            <VBox.margin>
-                              <Insets bottom="5.0" left="100.0" top="5.0" />
+                              <Insets left="85.0" />
                            </VBox.margin>
-                        </FontAwesomeIconView>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <Button id="buttonsChange" layoutX="651.0" layoutY="416.0" mnemonicParsing="false" onAction="#acercaDeView" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #FADBD8;" text="Ver mas">
-                     <font>
-                        <Font name="Bodoni MT" size="19.0" />
-                     </font>
-                  </Button>
-                  <FontAwesomeIconView glyphName="ARROW_RIGHT" layoutX="764.0" layoutY="443.0" size="18.0" />
                </children>
             </AnchorPane>
          </center>

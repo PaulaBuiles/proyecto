@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cue.clothingshopfinal.controller.BeginningController">
    <children>
-      <ImageView fitHeight="452.0" fitWidth="393.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="516.0" fitWidth="509.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/index_woman.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="442.0" fitWidth="393.0" layoutX="381.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="527.0" fitWidth="459.0" layoutX="455.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/index_man.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="183.0" layoutY="166.0" text="Label" />
+      <Label layoutX="141.0" layoutY="162.0" text="IR A MODA DE " textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font></Label>
+      <Label layoutX="85.0" layoutY="250.0" text="MUJER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="86.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="162.0" text="IR A MODA DE " textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="252.0" text="HOMBRE" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="83.0" />
+         </font>
+      </Label>
+      <Button layoutX="-3.0" layoutY="3.0" mnemonicParsing="false" onAction="#buttonWoman" opacity="0.0" prefHeight="516.0" prefWidth="459.0" text="Button" />
+      <Button layoutX="454.0" layoutY="3.0" mnemonicParsing="false" onAction="#buttonMen" opacity="0.0" prefHeight="516.0" prefWidth="459.0" text="Button" />
    </children>
 </AnchorPane>

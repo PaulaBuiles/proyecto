@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="493.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cue.clothingshopfinal.controller.LoginController">
+   <children>
+      <BorderPane prefHeight="397.0" prefWidth="494.0">
+         <center>
+            <AnchorPane prefHeight="243.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="104.0" layoutY="45.0" text="Usuario">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="19.0" />
+                     </font></Label>
+                  <Label layoutX="90.0" layoutY="113.0" text="Contraseña">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="loginUsuario" layoutX="65.0" layoutY="71.0" promptText="Ingrese su usuario" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font></TextField>
+                  <Button layoutX="90.0" layoutY="177.0" mnemonicParsing="false" onMouseClicked="#sellView" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #EABE3F;" text="Entrar">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font></Button>
+                  <PasswordField fx:id="loginContraseña" layoutX="65.0" layoutY="143.0" promptText="Ingrese su contraseña" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font></PasswordField>
+                  <ImageView fitHeight="196.0" fitWidth="233.0" layoutX="293.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/index_woman2.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="130.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="494.0" layoutX="-1.0" layoutY="-10.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/elegante-fondo-negro-diseno-diseno_13920-2177.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="96.0" layoutY="-1.0" prefHeight="142.0" prefWidth="347.0" text="Ingresar a Fashion Store" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

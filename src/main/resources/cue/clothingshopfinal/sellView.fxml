@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cue.clothingshopfinal.controller.SellController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="701.0" prefWidth="877.0">
+         <top>
+            <AnchorPane prefHeight="126.0" prefWidth="785.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="329.0" layoutY="19.0" prefHeight="43.0" prefWidth="220.0" text="Fashion Store" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="34.0" />
+                     </font>
+                  </Label>
+                  <Button id="buttonsChange" layoutX="302.0" layoutY="81.0" mnemonicParsing="false" onAction="#beginningView" style="-fx-background-color: #FADBD8;" text="Inicio">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="buttonsChange" layoutX="412.0" layoutY="81.0" mnemonicParsing="false" onAction="#productWomenView" style="-fx-background-color: #FADBD8;" text="Mujer">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="21.0" layoutY="41.0" text="Ayuda">
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="63.0" text="LLama 3136642230">
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="buscar" fx:id="buscar" layoutX="728.0" layoutY="48.0" prefHeight="26.0" prefWidth="122.0" promptText="Buscar productos" style="-fx-border-color: #FADBD8;" />
+                  <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="687.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/istockphoto-1136192849-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="821.0" layoutY="14.0" onMouseClicked="#loginView" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="7.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/56418004-icono-de-teléfono-blanco-y-negro-vector-del-teléfono-símbolo-aislado-en-el-fondo-blanco-pictograma-t.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="47.0" layoutX="767.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button id="buttonsChange" layoutX="518.0" layoutY="81.0" mnemonicParsing="false" onAction="#productsMenView" style="-fx-background-color: #FADBD8;" text="Hombre">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="TU CARRITO DE COMPRAS:">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button id="buttonsChange" layoutX="523.0" layoutY="472.0" mnemonicParsing="false" onAction="#finishSell" prefHeight="42.0" prefWidth="221.0" style="-fx-background-color: #FADBD8;" text="FINALIZAR COMPRA">
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tblSell" layoutY="69.0" prefHeight="358.0" prefWidth="878.0" style="-fx-border-color: #FADBD8;">
+                    <columns>
+                      <TableColumn fx:id="colName" prefWidth="424.800048828125" text="NOMBRE" />
+                      <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="217.5999755859375" text="PRECIO" />
+                        <TableColumn fx:id="colType" minWidth="0.0" prefWidth="236.7999267578125" text="TIPO" />
+                    </columns>
+                  </TableView>
+                  <Button id="buttonsChange" layoutX="115.0" layoutY="472.0" mnemonicParsing="false" onAction="#delete" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: #FADBD8;" text="ELIMINAR">
+                     <font>
+                        <Font name="Bodoni MT" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
