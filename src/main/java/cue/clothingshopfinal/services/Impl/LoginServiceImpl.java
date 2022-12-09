@@ -1,30 +1,25 @@
 package cue.clothingshopfinal.services.Impl;
 
+import cue.clothingshopfinal.model.Client;
 import cue.clothingshopfinal.services.LoginService;
 
-import java.util.Objects;
 
 public class LoginServiceImpl implements LoginService {
-    String user= "paula";
-    String password= "12345";
+
+    private final ClothingImpl clothingImpl;
+
+    public LoginServiceImpl(ClothingImpl clothingImpl) {this.clothingImpl = clothingImpl;}
+
 
     @Override
     public Boolean login(String username, String pass) {
-        System.out.println(username+pass);
-        boolean passwordLogin = checkPass(pass);
-        boolean us = checkUser(username);
-        if(passwordLogin == true && us == true){
-            return true;
-        }else return false;
-    }
-    public Boolean checkPass(String passwordRegis){
-        if (Objects.equals(password, passwordRegis)){
-            return true;
-        }else return false;
-    }
-    public Boolean checkUser(String username){
-        if (Objects.equals(user, username)) {
-            return true;
-        }else return false;
+        for (Client client: clothingImpl.getClientService().getClientList()){
+            if (client.getUsername().equals(username)&&client.getPassword().equals(pass)){
+                clothingImpl.getClientService().setClientOn(client);
+                return true;
+            }
+            System.out.println(client.getUsername());
+        }
+        return false;
     }
 }

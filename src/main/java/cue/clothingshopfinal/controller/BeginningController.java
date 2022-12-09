@@ -6,11 +6,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import cue.clothingshopfinal.HelloApplication;
+import cue.clothingshopfinal.persistence.Persistence;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class BeginningController {
@@ -35,7 +35,8 @@ public class BeginningController {
         }
 
         @FXML
-        void initialize() {
+        void initialize() throws IOException {
+                Persistence.loadUsers();
 
         }
         public void setStage(Stage stage) {this.stage=stage;}

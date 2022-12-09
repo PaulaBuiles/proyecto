@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="639.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cue.clothingshopfinal.controller.RegisterController">
+   <children>
+      <BorderPane prefHeight="397.0" prefWidth="494.0">
+         <top>
+            <AnchorPane prefHeight="130.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="639.0" layoutX="-1.0" layoutY="-10.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/elegante-fondo-negro-diseno-diseno_13920-2177.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="150.0" layoutY="-1.0" prefHeight="142.0" prefWidth="419.0" text="Registrarse a Fashion Store" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="342.0" prefWidth="638.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="295.0" layoutY="61.0" text="Usuario">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="282.0" layoutY="172.0" text="Contraseña">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="registerUsuario" layoutX="256.0" layoutY="87.0" promptText="Ingrese su usuario" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="182.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#sellView" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #EABE3F;" text="Registrarse">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="196.0" fitWidth="233.0" layoutX="449.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/index_woman2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="516.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#loginView" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #EABE3F;" text="ir a Login">
+                     <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="429.0" layoutY="14.0" prefHeight="28.0" prefWidth="194.0" text="¿Ya has ingresado antes?" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="101.0" layoutY="62.0" text="Gmail">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="registerGmail" layoutX="62.0" layoutY="88.0" promptText="Ingrese su gmail" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="TOP_LEFT" layoutX="120.0" layoutY="170.0" text="id">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="registerId" layoutX="62.0" layoutY="194.0" promptText="Ingrese su id" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="186.0" layoutY="14.0" prefHeight="28.0" prefWidth="134.0" text="Ingresa tus datos" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="registerContrasena" layoutX="254.0" layoutY="194.0" promptText="Ingrese su usuario" style="-fx-border-color: #EABE3F;">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

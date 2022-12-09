@@ -2,12 +2,13 @@ package cue.clothingshopfinal.controller;
 
 import cue.clothingshopfinal.services.Impl.ClothingImpl;
 import cue.clothingshopfinal.services.ModelFcatoryService;
-import javafx.scene.image.ImageView;
 
 public class ModelFactoryController implements ModelFcatoryService {
     ClothingImpl clothing;
 
-
+    public ClothingImpl getClothing() {
+        return clothing;
+    }
 
     private static class SingletonHolder {
         // El constructor de Singleton puede ser llamado desde aquí al ser protected

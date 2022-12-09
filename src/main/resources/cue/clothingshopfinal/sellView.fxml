@@ -86,9 +86,8 @@
                   </Button>
                   <TableView fx:id="tblSell" layoutY="69.0" prefHeight="358.0" prefWidth="878.0" style="-fx-border-color: #FADBD8;">
                     <columns>
-                      <TableColumn fx:id="colName" prefWidth="424.800048828125" text="NOMBRE" />
-                      <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="217.5999755859375" text="PRECIO" />
-                        <TableColumn fx:id="colType" minWidth="0.0" prefWidth="236.7999267578125" text="TIPO" />
+                      <TableColumn fx:id="colName" prefWidth="479.1999816894531" text="NOMBRE" />
+                      <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="396.800048828125" text="PRECIO" />
                     </columns>
                   </TableView>
                   <Button id="buttonsChange" layoutX="115.0" layoutY="472.0" mnemonicParsing="false" onAction="#delete" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: #FADBD8;" text="ELIMINAR">

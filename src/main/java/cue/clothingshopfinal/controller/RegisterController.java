@@ -3,14 +3,14 @@ package cue.clothingshopfinal.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.concurrent.CompletableFuture;
 import cue.clothingshopfinal.HelloApplication;
+import cue.clothingshopfinal.exceptions.InputException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class LoginController implements Initializable {
+public class RegisterController implements Initializable {
     ModelFactoryController mfc= ModelFactoryController.getInstance();
 
     @FXML
@@ -20,45 +20,51 @@ public class LoginController implements Initializable {
     private URL location;
 
     @FXML
-    private TextField loginContrasena;
+    private TextField registerContrasena;
 
     @FXML
-    private TextField loginUsuario;
+    private TextField registerGmail;
+
+    @FXML
+    private TextField registerId;
+
+    @FXML
+    private TextField registerUsuario;
+
+    @FXML
+    void loginView(MouseEvent event) throws IOException {
+        HelloApplication.loginView(event);
+
+    }
 
     @FXML
     void sellView(MouseEvent event) {
         try {
-            if(mfc.getClothing().getLoginService().login(loginUsuario.getText(), loginContrasena.getText())){
+            if (mfc.clothing.getRegisterService().addUser(registerUsuario.getText(), registerContrasena.getText(), registerGmail.getText(), registerId.getText())){
+                mfc.getClothing().getClientService().printClients();
+
                 HelloApplication.sellView(event);
-                System.out.println("hola");
-                mfc.clothing.getClientService().condition(loginContrasena.getText());
-            }else {
-                loginUsuario.setText("");
-                loginContrasena.setText("");
+                registerUsuario.setText("");
+                registerContrasena.setText("");
+                registerId.setText("");
+                registerGmail.setText("");
+            }else{
                 alertError();
             }
-        }catch (IOException e) {
+        }catch (IOException | InputException e){
             throw new RuntimeException(e);
         }
     }
-    @FXML
-    void registerView(MouseEvent event) throws IOException {
-         HelloApplication.registerView(event);
-    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        CompletableFuture.runAsync(()->{
-            System.out.println("Llamamos persistencia");
-            mfc.clothing.getClientService().createUserList();
-
-        });
     }
     void alertError(){
         javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.ERROR);
-        alert.setHeaderText(null);
+        alert.setHeaderText("Espacios incompletos");
         alert.setTitle("Error");
-        alert.setContentText("Usuario no encontrado");
+        alert.setContentText("Debe completar todos los campos");
         alert.showAndWait();
 
     }

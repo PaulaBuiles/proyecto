@@ -93,7 +93,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price1" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$200.000">
+                        <Label fx:id="price1" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="200.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -101,7 +101,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product1" fitHeight="32.0" fitWidth="33.0" onMouseClicked="#addCart" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="33.0" onMouseClicked="#addCart" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
                            </image>
@@ -125,7 +125,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price2" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$180.000">
+                        <Label fx:id="price2" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="180.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -133,7 +133,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product2" fitHeight="31.0" fitWidth="35.0" onMouseClicked="#addCart" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="31.0" fitWidth="35.0" onMouseClicked="#addCart2" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
                            </image>
@@ -157,7 +157,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price3" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="\$60.000">
+                        <Label fx:id="price3" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="202.0" text="60.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -165,7 +165,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product3" fitHeight="66.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="66.0" fitWidth="33.0" onMouseClicked="#addCart3" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
                               <Insets left="85.0" />
                            </VBox.margin>
@@ -189,7 +189,7 @@
                               <Font name="Bodoni MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price4" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$80.000">
+                        <Label fx:id="price4" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="80.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -197,7 +197,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product4" fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="45.0" onMouseClicked="#addCart4" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
                            </image>
@@ -221,7 +221,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price5" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$160.000">
+                        <Label fx:id="price5" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="160.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -229,7 +229,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product5" fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="40.0" onMouseClicked="#addCart5" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
                            </image>
@@ -254,7 +254,7 @@
                               <Font name="Bodoni MT Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="price6" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="\$160.000">
+                        <Label fx:id="price6" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="202.0" text="160.000">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -262,7 +262,7 @@
                               <Font name="Bodoni MT" size="19.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="product6" fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="39.0" onMouseClicked="#addCart6" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/agregar-al-icono-de-carro-compra-adición-bien-organizado-y-totalmente-editable-agregando-para-cualquier-uso-como-medios-impresos-167547952.jpg" />
                            </image>
